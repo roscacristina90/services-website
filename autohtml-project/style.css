@@ -1806,18 +1806,32 @@ html, body {
   overflow: hidden !important;
   pointer-events: all !important;
 }
+.subscribe-thankyou-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(24,24,24,0.7);
+  border-radius: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
 .subscribe-thankyou-message {
-  filter: none !important;
-  background: #0d0c0c !important;
+  background: transparent;
   color: #ff663f;
-  padding: 3.5rem;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
   border-radius: 2rem;
   font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
   font-size: 1.2rem;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  box-shadow: none;
   max-width: 90vw;
   z-index: 2147483648 !important;
+  position: relative;
+  bottom: 0;
 }
 
 body.modal-open {
