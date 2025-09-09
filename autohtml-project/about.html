@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | iDesign</title>
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      background: #0d0c0c;
+      overflow-x: hidden;
+    }
+  .about-main-section { max-width: 1200px; margin: 1.5rem auto 0 auto; padding: 1.5rem 1rem 1.5rem 1rem; }
+  .about-title { color: #fff; font-size: 2.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 2rem; text-align: center; }
+    .about-team-cards {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2.5rem;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      overflow: visible;
+    }
+    .about-main-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .breadcrumbs-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-left: 2.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumbs {
+      font-family: var(--paragraf-text-style-font-family, "OpenSans-Regular", sans-serif);
+      font-size: 1.05rem;
+      color: #ff663f;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      letter-spacing: 0.5px;
+      margin: 0;
+      padding: 0;
+    }
+    .breadcrumbs a {
+      color: #ff663f;
+      text-decoration: none;
+      transition: text-decoration 0.2s;
+    }
+    .breadcrumbs a:first-child {
+      color: #fbf6f4;
+    }
+    .breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+    .breadcrumb-separator {
+      color: #ff663f;
+      font-size: 1.2em;
+      margin: 0 0.2em;
+    }
+    .breadcrumb-current {
+      color: #ff663f;
+      opacity: 0.7;
+      cursor: default;
+    }
+    .about-card { background: #181818; border-radius: 1rem; box-shadow: 0 2px 24px rgba(0,0,0,0.15); width: 270px; padding: 1.5rem 1rem 1.5rem 1rem; display: flex; flex-direction: column; align-items: center; transition: transform 0.3s; }
+  .about-card img { border-radius: 0.875rem; width: 100%; height: 220px; object-fit: cover; margin-bottom: 1rem; }
+    .about-card .about-name { color: #ff663f; font-size: 1.3rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.3rem; }
+    .about-card .about-role { color: #f0efef; font-size: 1rem; margin-bottom: 0.7rem; }
+    .about-card .about-desc { color: #f0efef; font-size: 1rem; text-align: center; }
+    .about-description { color: #f0efef; font-size: 1.2rem; text-align: center; max-width: 800px; margin: 0 auto 2.5rem auto; }
+
+  </style>
+</head>
+<body>
+  <div class="breadcrumbs-bar">
+    <nav class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">About Us</span>
+    </nav>
+  </div>
+  <div class="about-main-section">
+    <div class="about-title">About Us</div>
+    <div class="about-description">
+      We are more than just interior designers – we are creators of immersive experiences, curators of timeless beauty, and architects of comfort. Our team of talented professionals brings a wealth of expertise and creativity to the table, ensuring that each design reflects the unique personality and <br>vision of our clients.
+    </div>
+    <div class="about-team-cards">
+      <div class="about-card">
+  <img src="pictures/frame-420.png" alt="Victor Torre">
+        <div class="about-name">Victor Torre</div>
+        <div class="about-role">Design Director</div>
+        <div class="about-desc">Leading the creative vision and ensuring every project is a masterpiece of style and function.</div>
+      </div>
+      <div class="about-card">
+  <img src="pictures/frame-421.png" alt="Emily Thomson">
+        <div class="about-name">Emily Thomson</div>
+        <div class="about-role">Interior Designer</div>
+        <div class="about-desc">Transforming spaces with a keen eye for detail and a passion for personalized design.</div>
+      </div>
+      <div class="about-card">
+  <img src="pictures/studio-shot-elder-man-with-grey-hair-23-2148036821-10.png" alt="Diana Parker">
+        <div class="about-name">Diana Parker</div>
+        <div class="about-role">Project Manager</div>
+        <div class="about-desc">Coordinating every step to deliver seamless, on-time, and on-budget results for our clients.</div>
+      </div>
+      <div class="about-card">
+  <img src="pictures/frame-400.png" alt="Clara Carter">
+        <div class="about-name">Clara Carter</div>
+        <div class="about-role">CAD Technician</div>
+        <div class="about-desc">Bringing ideas to life with technical precision and innovative 3D visualizations.</div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- Chat popup directly embedded -->
+<div id="chat-fab">
+  <button id="chat-fab-btn" aria-label="Chat with us" style="display: flex; align-items: center; gap: 0.5rem;">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="16" fill="#ff663f"/>
+      <path d="M10 13C10 11.3431 11.3431 10 13 10H19C20.6569 10 22 11.3431 22 13V19C22 20.6569 20.6569 22 19 22H13C11.3431 22 10 20.6569 10 19V13Z" stroke="white" stroke-width="2"/>
+      <circle cx="14" cy="16" r="1" fill="white"/>
+      <circle cx="16" cy="16" r="1" fill="white"/>
+      <circle cx="18" cy="16" r="1" fill="white"/>
+    </svg>
+  <span style="color:#fff; font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif); font-size: 1.05rem; font-weight: 400; letter-spacing: 0.5px;">Chat</span>
+  </button>
+</div>
+<div id="chat-popup" style="display:none;">
+  <div id="chat-popup-header">
+    <span>Chat with our team</span>
+    <button id="chat-popup-close">×</button>
+  </div>
+  <div id="chat-popup-messages"></div>
+  <form id="chat-popup-form">
+    <input type="text" id="chat-popup-input" placeholder="Type your message..." autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
+</div>
+<script>
+const chatFabBtn = document.getElementById('chat-fab-btn');
+const chatPopup = document.getElementById('chat-popup');
+const chatPopupClose = document.getElementById('chat-popup-close');
+const chatPopupForm = document.getElementById('chat-popup-form');
+const chatPopupInput = document.getElementById('chat-popup-input');
+const chatPopupMessages = document.getElementById('chat-popup-messages');
+
+chatFabBtn.onclick = () => {
+  chatPopup.style.display = 'flex';
+  chatFabBtn.style.display = 'none';
+};
+chatPopupClose.onclick = () => {
+  chatPopup.style.display = 'none';
+  chatFabBtn.style.display = 'block';
+};
+chatPopupForm.onsubmit = function(e) {
+  e.preventDefault();
+  const msg = chatPopupInput.value.trim();
+  if (!msg) return;
+  const userMsg = document.createElement('div');
+  userMsg.textContent = 'You: ' + msg;
+  userMsg.style.color = '#ff663f';
+  chatPopupMessages.appendChild(userMsg);
+  chatPopupInput.value = '';
+  // Simulate bot reply
+  setTimeout(() => {
+    const botMsg = document.createElement('div');
+    botMsg.textContent = 'Bot: Thank you for your message! Our team will reply soon.';
+    botMsg.style.color = '#f0efef';
+    chatPopupMessages.appendChild(botMsg);
+    chatPopupMessages.scrollTop = chatPopupMessages.scrollHeight;
+  }, 1000);
+  chatPopupMessages.scrollTop = chatPopupMessages.scrollHeight;
+};
+</script>
+<style>
+#chat-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+}
+#chat-fab-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: box-shadow 0.2s;
+}
+#chat-fab-btn:hover {
+  box-shadow: 0 4px 24px rgba(255,102,63,0.25);
+}
+#chat-popup {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 340px;
+  max-width: 95vw;
+  background: #181818;
+  color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  z-index: 10000;
+  overflow: hidden;
+}
+#chat-popup-header {
+  background: #ff663f;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#chat-popup-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#chat-popup-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 200px;
+  font-size: 1rem;
+}
+#chat-popup-form {
+  display: flex;
+  border-top: 1px solid #333;
+}
+#chat-popup-input {
+  flex: 1;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0 0 0 1.2rem;
+  background: #232323;
+  color: #fff;
+}
+#chat-popup-form button {
+  background: #ff663f;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 1.2rem 0;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#chat-popup-form button:hover { background: #e6552e; }
+</style>
+</html>

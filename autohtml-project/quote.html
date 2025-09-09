@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Quote</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="project">
+      <div class="breadcrumbs-bar">
+    <a href="index.html" class="back-btn" title="Back to Home">&#8592;</a>
+    <nav class="breadcrumbs">
+      <a href="index.html">Home</a> <span class="breadcrumb-separator">&#8226;</span> <span class="breadcrumb-current">Get a Free Quote</span>
+    </nav>
+  </div>
+    <div class="quote-section">
+      <h1 class="quote-title">Get a Free Quote</h1>
+      <form class="quote-form" onsubmit="showQuoteModal(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone (optional)">
+        <textarea name="details" placeholder="Tell us about your project..." rows="5"></textarea>
+        <button type="submit">Submit Quote Request</button>
+      </form>
+      <div id="quote-modal" class="quote-modal" style="display:none;">
+        <div class="quote-modal-content">
+          THANK YOU! YOUR MESSAGE HAS BEEN SENT. OUR TEAM WILL GET IN TOUCH WITH YOU SOON.
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showQuoteModal(e) {
+      e.preventDefault();
+      document.getElementById('quote-modal').style.display = 'flex';
+      setTimeout(function() {
+        document.getElementById('quote-modal').style.display = 'none';
+        document.querySelector('.quote-form').reset();
+      }, 3500);
+    }
+  </script>
+</body>
+</html>

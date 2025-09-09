@@ -1,0 +1,127 @@
+<!-- Simple floating chat button and chat box -->
+<div id="chat-widget">
+  <button id="chat-open-btn">Chat with our team</button>
+  <div id="chat-box" style="display:none;">
+    <div id="chat-header">
+      <span>Team Chat</span>
+      <button id="chat-close-btn">×</button>
+    </div>
+    <div id="chat-messages"></div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<script>
+// Simple chat widget logic (demo only, not real-time)
+const chatOpenBtn = document.getElementById('chat-open-btn');
+const chatBox = document.getElementById('chat-box');
+const chatCloseBtn = document.getElementById('chat-close-btn');
+const chatForm = document.getElementById('chat-form');
+const chatInput = document.getElementById('chat-input');
+const chatMessages = document.getElementById('chat-messages');
+
+chatOpenBtn.onclick = () => { chatBox.style.display = 'block'; chatOpenBtn.style.display = 'none'; };
+chatCloseBtn.onclick = () => { chatBox.style.display = 'none'; chatOpenBtn.style.display = 'block'; };
+chatForm.onsubmit = function(e) {
+  e.preventDefault();
+  const msg = chatInput.value.trim();
+  if (!msg) return;
+  const userMsg = document.createElement('div');
+  userMsg.textContent = 'You: ' + msg;
+  userMsg.style.color = '#ff663f';
+  chatMessages.appendChild(userMsg);
+  chatInput.value = '';
+  // Simulate team reply
+  setTimeout(() => {
+    const teamMsg = document.createElement('div');
+    teamMsg.textContent = 'Team: Thank you for your message! We will reply soon.';
+    teamMsg.style.color = '#f0efef';
+    chatMessages.appendChild(teamMsg);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }, 1000);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+};
+</script>
+<style>
+#chat-widget {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  font-family: var(--paragraf-text-style-font-family, "OpenSans-Regular", sans-serif);
+}
+#chat-open-btn {
+  background: #ff663f;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+#chat-open-btn:hover { background: #e6552e; }
+#chat-box {
+  background: #181818;
+  color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  width: 320px;
+  max-width: 90vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#chat-header {
+  background: #ff663f;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#chat-close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#chat-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 200px;
+  font-size: 1rem;
+}
+#chat-form {
+  display: flex;
+  border-top: 1px solid #333;
+}
+#chat-input {
+  flex: 1;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0 0 0 1.2rem;
+  background: #232323;
+  color: #fff;
+}
+#chat-form button {
+  background: #ff663f;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 1.2rem 0;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#chat-form button:hover { background: #e6552e; }
+</style>

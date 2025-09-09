@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | iDesign</title>
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic&display=swap" rel="stylesheet">
+  <style>
+    /* Service card image hover effect as in the original service section */
+    .service-card img {
+      transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    .service-card:hover img {
+      transform: scale(1.07) translateY(-10px);
+      z-index: 2;
+    }
+    /* Service card image hover effect as in the original service section */
+    .service-card img {
+      transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    .service-card:hover img {
+      transform: scale(1.07) translateY(-10px);
+      z-index: 2;
+    }
+    body {
+      background: #0d0c0c;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Changed from center to flex-start */
+      justify-content: flex-start; /* Changed from center to flex-start */
+    }
+    .services-main-section {
+      max-width: 1200px;
+      min-height: calc(100vh - 7.5rem);
+      margin: -1.5rem auto 0 auto;
+      padding: 1.5rem 1rem 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .services-title {
+      color: #fff;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+        .breadcrumbs-bar {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          margin-left: 2.5rem;
+          margin-top: 2.5rem;
+          margin-bottom: 1.5rem;
+          max-width: 1200px;
+        }
+      margin: 0 auto 2.5rem auto;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+    .services-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 2.7rem;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+    .service-card {
+      background: #181818;
+      border-radius: 1rem;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.15);
+      width: 300px;
+      height: 300px;
+      padding: 1.1rem 1.1rem 1.1rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+      box-sizing: border-box;
+    }
+    .service-card img {
+      border-radius: 0.875rem;
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      margin-bottom: 0.7rem;
+    }
+    .service-card .service-name {
+      color: #ff663f;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+    .service-card .service-desc {
+      color: #f0efef;
+      font-size: 1rem;
+      text-align: center;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+  </style>
+</head>
+<body>
+  <div class="breadcrumbs-bar">
+    <nav class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Services</span>
+    </nav>
+  </div>
+  <div class="services-main-section">
+    <div class="services-title">Our Services</div>
+    <div class="services-description">
+      Explore our professional interior design services. We transform every space into a personalized haven of style, comfort, and functionality, tailored to your unique vision.
+    </div>
+    <div class="services-cards">
+      <div class="service-card">
+  <img src="pictures/unsplash-3-b-8-t-4-vnk-xt-00.png" alt="Living Room">
+        <div class="service-name">Living Room</div>
+        <div class="service-desc">Modern, cozy, and functional living room designs that reflect your personality and lifestyle.</div>
+      </div>
+      <div class="service-card">
+  <img src="pictures/unsplash-r-uv-w-1-kgd-9-a-40.png" alt="Bedroom">
+        <div class="service-name">Bedroom</div>
+        <div class="service-desc">Create your dream bedroom with our personalized, relaxing, and stylish solutions.</div>
+      </div>
+      <div class="service-card">
+  <img src="pictures/unsplash-t-wj-0-qb-jn-4-z-i0.png" alt="Kitchen">
+        <div class="service-name">Kitchen</div>
+        <div class="service-desc">Functional and beautiful kitchens designed for cooking, gathering, and making memories.</div>
+      </div>
+      <div class="service-card">
+  <img src="pictures/bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-10.png" alt="Bathroom">
+        <div class="service-name">Bathroom</div>
+        <div class="service-desc">Elegant and practical bathrooms that combine comfort, style, and smart storage.</div>
+      </div>
+      <div class="service-card">
+  <img src="pictures/bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-11.png" alt="Kids Room">
+        <div class="service-name">Kids Room</div>
+        <div class="service-desc">Fun, safe, and creative spaces for children to play, learn, and grow.</div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery Modal -->
+  <div id="gallery-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10001; align-items:center; justify-content:center;">
+    <button id="gallery-close" style="position:absolute; top:2rem; right:2rem; background:none; border:none; color:#fff; font-size:2.5rem; cursor:pointer;">&times;</button>
+    <button id="gallery-prev" style="position:absolute; left:2rem; top:50%; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:2.5rem; cursor:pointer;">&#8592;</button>
+    <img id="gallery-img" src="" alt="Gallery Image" style="max-width:70vw; max-height:80vh; border-radius:1rem; box-shadow:0 2px 24px rgba(0,0,0,0.5); display:block; margin:auto;" />
+    <button id="gallery-next" style="position:absolute; right:2rem; top:50%; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:2.5rem; cursor:pointer;">&#8594;</button>
+    <div id="gallery-counter" style="position:absolute; bottom:2rem; left:50%; transform:translateX(-50%); color:#fff; font-size:1.2rem;"></div>
+  </div>
+  <script>
+  // Images for each service (first 20 per folder)
+  const livingRoomImages = [
+    '../living room/albero-furniture-bratislava-j59xzCv8Hos-unsplash.jpg',
+    '../living room/cat-han-aPD1yNUYP0w-unsplash.jpg',
+    '../living room/collov-home-design-H-1j_s0dhCw-unsplash.jpg',
+    '../living room/dan-gold-4HG3Ca3EzWw-unsplash.jpg',
+    '../living room/francesca-tosolini-qnSTxcs0EEs-unsplash.jpg',
+    '../living room/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg',
+    '../living room/jon-stebbe-paydk0JcIOQ-unsplash.jpg',
+    '../living room/kara-eads-L7EwHkq1B2s-unsplash.jpg',
+    '../living room/lotus-design-n-print-r_y2VBvEOIE-unsplash.jpg',
+    '../living room/point3d-commercial-imaging-ltd-1ZbeKKmR9O8-unsplash.jpg',
+    '../living room/point3d-commercial-imaging-ltd-WIPVrs5meCA-unsplash.jpg',
+    '../living room/spacejoy-9M66C_w_ToM-unsplash.jpg',
+    '../living room/spacejoy-c0JoR_-2x3E-unsplash.jpg',
+    '../living room/spacejoy-cA8GDGBs8g8-unsplash.jpg',
+    '../living room/spacejoy-IH7wPsjwomc-unsplash.jpg',
+    '../living room/spacejoy-k2pumSRYYss-unsplash.jpg',
+    '../living room/spacejoy-KSfe2Z4REEM-unsplash.jpg',
+    '../living room/spacejoy-PyeXkOVmG1Y-unsplash.jpg',
+    '../living room/spacejoy-RqO6kwm4tZY-unsplash.jpg',
+    '../living room/spacejoy-wWXEgQQDoNk-unsplash.jpg',
+  ];
+  const bedroomImages = [
+    '../bedroom/chastity-cortijo-R-w5Q-4Mqm0-unsplash.jpg',
+    '../bedroom/mark-champs-Id2IIl1jOB0-unsplash.jpg',
+    '../bedroom/spacejoy-8Hv3q2bWY3Q-unsplash.jpg',
+    '../bedroom/spacejoy-8wDnylxemkk-unsplash.jpg',
+    '../bedroom/spacejoy-CtPRtg8KSIs-unsplash.jpg',
+    '../bedroom/spacejoy-ctyssSFmXmU-unsplash (1).jpg',
+    '../bedroom/spacejoy-ctyssSFmXmU-unsplash.jpg',
+    '../bedroom/spacejoy-eyEy5YZhSvU-unsplash.jpg',
+    '../bedroom/spacejoy-FX61rYaAfCQ-unsplash.jpg',
+    '../bedroom/spacejoy-IARlbQa6Kc8-unsplash.jpg',
+    '../bedroom/spacejoy-M95SWsUIXTE-unsplash.jpg',
+    '../bedroom/spacejoy-op9evfg3qww-unsplash.jpg',
+    '../bedroom/spacejoy-RUvW1KGD9a4-unsplash.jpg',
+    '../bedroom/spacejoy-Vpbp-7GWTSw-unsplash.jpg',
+    '../bedroom/spacejoy-w94bzo75fBE-unsplash.jpg',
+    '../bedroom/spacejoy-x3mSC1WnWhc-unsplash.jpg',
+    '../bedroom/spacejoy-zIoU4ALVugs-unsplash.jpg',
+    '../bedroom/spacejoy-ZjjzXtzzd6Y-unsplash.jpg',
+  ];
+  const kitchenImages = [
+    '../kitchen/aaron-huber-G7sE2S4Lab4-unsplash.jpg',
+    '../kitchen/clay-elliot-1by_GbwEMwc-unsplash.jpg',
+    '../kitchen/collov-home-design--aDGbdTsBZg-unsplash.jpg',
+    '../kitchen/frames-for-your-heart-JDBVXignFdA-unsplash.jpg',
+    '../kitchen/frames-for-your-heart-MyeOnGcibCQ-unsplash.jpg',
+    '../kitchen/fred-kleber-mxs5EVBPPaM-unsplash.jpg',
+    '../kitchen/im3rd-media-FJZtZldA-uE-unsplash.jpg',
+    '../kitchen/jason-briscoe-AQl-J19ocWE-unsplash.jpg',
+    '../kitchen/jason-leung-jWU9FpLW7fI-unsplash.jpg',
+    '../kitchen/kam-idris-hYb7kbu4x7E-unsplash.jpg',
+    '../kitchen/lotus-design-n-print-hiPh9yms-n0-unsplash.jpg',
+    '../kitchen/lotus-design-n-print-ik9WP2V8Vas-unsplash.jpg',
+    '../kitchen/lotus-design-n-print-l_M3usPiEuM-unsplash.jpg',
+    '../kitchen/lotus-design-n-print-oCw5_evbWyI-unsplash.jpg',
+    '../kitchen/lotus-design-n-print-RwXneIyqxAw-unsplash.jpg',
+    '../kitchen/lotus-design-n-print-UDDULE_eIBY-unsplash.jpg',
+    '../kitchen/lotus-design-n-print-_AK42TQRyCw-unsplash.jpg',
+    '../kitchen/odiseo-castrejon-CX8ooha2yLA-unsplash.jpg',
+    '../kitchen/roam-in-color-RryFk4n-vOs-unsplash.jpg',
+    '../kitchen/rune-enstad-UXFJ-6Zj27M-unsplash.jpg',
+  ];
+  const bathroomImages = [
+    '../bathroom/alexander-fife-rDSwQ_6XFUs-unsplash.jpg',
+    '../bathroom/ali-moradi-G9tpRhcdeco-unsplash.jpg',
+    '../bathroom/alona-gross-f61KO4nDeJA-unsplash.jpg',
+    '../bathroom/alona-gross-ntad0NOoj8o-unsplash.jpg',
+    '../bathroom/backbone-L4iRkKL5dng-unsplash.jpg',
+    '../bathroom/beks-mu-2tEdrFYjfMY-unsplash.jpg',
+    '../bathroom/bilal-mansuri-mmi7E0WrjOk-unsplash.jpg',
+    '../bathroom/billy-jo-catbagan--5m_rM6fs_Q-unsplash.jpg',
+    '../bathroom/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg',
+    '../bathroom/christian-mackie-6BJu73-UJpg-unsplash.jpg',
+    '../bathroom/clay-banks-ckdoA-tv9uw-unsplash.jpg',
+    '../bathroom/masato-tsuchiya-hYexJa2IrVo-unsplash.jpg',
+    '../bathroom/murad-kerimli-N03PjHWOEFA-unsplash.jpg',
+    '../bathroom/nelbali-photography-tMsdgtFLVJE-unsplash.jpg',
+    '../bathroom/point3d-commercial-imaging-ltd-0qWd-IGUqv4-unsplash.jpg',
+    '../bathroom/raquel-navalon-alvarez-TWj0qbJn4zI-unsplash.jpg',
+    '../bathroom/steven-ungermann-Aac7IlKnYX8-unsplash.jpg',
+  ];
+  const kidsRoomImages = [
+    '../kids room/collov-home-design-0dXbMlfLI_8-unsplash.jpg',
+    '../kids room/collov-home-design-liEmt5SChxY-unsplash.jpg',
+    '../kids room/collov-home-design-wN63YFU_JXk-unsplash.jpg',
+    '../kids room/gautam-arora-78Ae6N7rNvI-unsplash.jpg',
+    '../kids room/huy-nguyen-NTmTl3KCSBU-unsplash.jpg',
+    '../kids room/isaac-quesada-QXj7uL_Mc0w-unsplash.jpg',
+    '../kids room/kenny-eliason-b_GtasP517U-unsplash.jpg',
+    '../kids room/lisa-anna--59TQIlcsRk-unsplash.jpg',
+    '../kids room/lisa-anna-or8te0rje5g-unsplash.jpg',
+    '../kids room/the-artwill-AWzFKOH5UIQ-unsplash.jpg',
+    '../kids room/yusheng-deng-BcJ_JmgSoyk-unsplash.jpg',
+  ];
+  let galleryIndex = 0;
+  const galleryModal = document.getElementById('gallery-modal');
+  const galleryImg = document.getElementById('gallery-img');
+  const galleryClose = document.getElementById('gallery-close');
+  const galleryPrev = document.getElementById('gallery-prev');
+  const galleryNext = document.getElementById('gallery-next');
+  const galleryCounter = document.getElementById('gallery-counter');
+  // Open modal for each service card
+  const serviceCards = document.querySelectorAll('.service-card');
+  if (serviceCards[0]) serviceCards[0].onclick = function() { openGallery(livingRoomImages, 0); };
+  if (serviceCards[1]) serviceCards[1].onclick = function() { openGallery(bedroomImages, 0); };
+  if (serviceCards[2]) serviceCards[2].onclick = function() { openGallery(kitchenImages, 0); };
+  if (serviceCards[3]) serviceCards[3].onclick = function() { openGallery(bathroomImages, 0); };
+  if (serviceCards[4]) serviceCards[4].onclick = function() { openGallery(kidsRoomImages, 0); };
+  function openGallery(images, startIdx) {
+    galleryModal.style.display = 'flex';
+    galleryModal.images = images;
+    galleryIndex = startIdx;
+    showGalleryImage();
+  }
+  function showGalleryImage() {
+    const images = galleryModal.images;
+    galleryImg.src = images[galleryIndex];
+    galleryCounter.textContent = (galleryIndex+1) + ' / ' + images.length;
+  }
+  galleryClose.onclick = function() {
+    galleryModal.style.display = 'none';
+  };
+  galleryPrev.onclick = function() {
+    const images = galleryModal.images;
+    galleryIndex = (galleryIndex - 1 + images.length) % images.length;
+    showGalleryImage();
+  };
+  galleryNext.onclick = function() {
+    const images = galleryModal.images;
+    galleryIndex = (galleryIndex + 1) % images.length;
+    showGalleryImage();
+  };
+  galleryModal.onclick = function(e) {
+    if (e.target === galleryModal) galleryModal.style.display = 'none';
+  };
+  </script>
+</body>
+<!-- Chat popup directly embedded -->
+<div id="chat-fab">
+  <button id="chat-fab-btn" aria-label="Chat with us" style="display: flex; align-items: center; gap: 0.5rem;">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="16" fill="#ff663f"/>
+      <path d="M10 13C10 11.3431 11.3431 10 13 10H19C20.6569 10 22 11.3431 22 13V19C22 20.6569 20.6569 22 19 22H13C11.3431 22 10 20.6569 10 19V13Z" stroke="white" stroke-width="2"/>
+      <circle cx="14" cy="16" r="1" fill="white"/>
+      <circle cx="16" cy="16" r="1" fill="white"/>
+      <circle cx="18" cy="16" r="1" fill="white"/>
+    </svg>
+  <span style="color:#fff; font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif); font-size: 1.05rem; font-weight: 400; letter-spacing: 0.5px;">Chat</span>
+  </button>
+</div>
+<div id="chat-popup" style="display:none;">
+  <div id="chat-popup-header">
+    <span>Chat with our team</span>
+    <button id="chat-popup-close">×</button>
+  </div>
+  <div id="chat-popup-messages"></div>
+  <form id="chat-popup-form">
+    <input type="text" id="chat-popup-input" placeholder="Type your message..." autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
+</div>
+<script>
+const chatFabBtn = document.getElementById('chat-fab-btn');
+const chatPopup = document.getElementById('chat-popup');
+const chatPopupClose = document.getElementById('chat-popup-close');
+const chatPopupForm = document.getElementById('chat-popup-form');
+const chatPopupInput = document.getElementById('chat-popup-input');
+const chatPopupMessages = document.getElementById('chat-popup-messages');
+
+chatFabBtn.onclick = () => {
+  chatPopup.style.display = 'flex';
+  chatFabBtn.style.display = 'none';
+};
+chatPopupClose.onclick = () => {
+  chatPopup.style.display = 'none';
+  chatFabBtn.style.display = 'block';
+};
+chatPopupForm.onsubmit = function(e) {
+  e.preventDefault();
+  const msg = chatPopupInput.value.trim();
+  if (!msg) return;
+  const userMsg = document.createElement('div');
+  userMsg.textContent = 'You: ' + msg;
+  userMsg.style.color = '#ff663f';
+  chatPopupMessages.appendChild(userMsg);
+  chatPopupInput.value = '';
+  // Simulate bot reply
+  setTimeout(() => {
+    const botMsg = document.createElement('div');
+    botMsg.textContent = 'Bot: Thank you for your message! Our team will reply soon.';
+    botMsg.style.color = '#f0efef';
+    chatPopupMessages.appendChild(botMsg);
+    chatPopupMessages.scrollTop = chatPopupMessages.scrollHeight;
+  }, 1000);
+  chatPopupMessages.scrollTop = chatPopupMessages.scrollHeight;
+};
+</script>
+<style>
+#chat-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+}
+#chat-fab-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: box-shadow 0.2s;
+}
+#chat-fab-btn:hover {
+  box-shadow: 0 4px 24px rgba(255,102,63,0.25);
+}
+#chat-popup {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 340px;
+  max-width: 95vw;
+  background: #181818;
+  color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  z-index: 10000;
+  overflow: hidden;
+}
+#chat-popup-header {
+  background: #ff663f;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#chat-popup-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#chat-popup-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 200px;
+  font-size: 1rem;
+}
+#chat-popup-form {
+  display: flex;
+  border-top: 1px solid #333;
+}
+#chat-popup-input {
+  flex: 1;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0 0 0 1.2rem;
+  background: #232323;
+  color: #fff;
+}
+#chat-popup-form button {
+  background: #ff663f;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 1.2rem 0;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#chat-popup-form button:hover { background: #e6552e; }
+</style>
+</html>

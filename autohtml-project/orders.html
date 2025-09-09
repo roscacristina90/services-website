@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Orders</title>
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      background: #0d0c0c;
+      overflow-x: hidden;
+    }
+    .order-container {
+      max-width: 400px;
+      margin: 5rem auto;
+      background: #181818;
+      border-radius: 1.5rem;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.15);
+      padding: 2.5rem 2rem;
+      color: #f0efef;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+    .order-title {
+      text-align: center;
+      color: #ff663f;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: var(--h5-font-family, 'OpenSans-SemiBold', sans-serif);
+    }
+    .order-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .order-form label {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      color: #f0efef;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+    .order-form input {
+      padding: 0.7rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1rem;
+      background: #232323;
+      color: #f0efef;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+    .order-form input:focus {
+      outline: 2px solid #ff663f;
+    }
+    .order-form button {
+      background: #ff663f;
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 1rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background 0.2s;
+      font-family: var(--button-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+    .order-form button:hover {
+      background: #e6552e;
+    }
+    .order-details {
+      margin-top: 2rem;
+      background: #232323;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      color: #ff663f;
+      font-size: 1.1rem;
+      text-align: center;
+      display: none;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+    }
+    .breadcrumbs-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-left: 2.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumbs {
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+      font-size: 1.05rem;
+      color: #ff663f;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      letter-spacing: 0.5px;
+      margin: 0;
+      padding: 0;
+    }
+    .breadcrumb-separator {
+      color: #ff663f;
+      font-size: 1.2em;
+      margin: 0 0.2em;
+    }
+    .breadcrumb-current {
+      color: #ff663f;
+      opacity: 0.7;
+      cursor: default;
+    }
+    .breadcrumbs a {
+      color: #ff663f;
+      text-decoration: none;
+      transition: text-decoration 0.2s;
+    }
+    .breadcrumbs a:first-child {
+      color: #f0efef;
+    }
+    .breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="breadcrumbs-bar">
+    <nav class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Your Orders</span>
+    </nav>
+  </div>
+  <div class="order-container">
+    <div class="order-title">Check Your Order</div>
+    <form class="order-form" id="orderForm" autocomplete="off">
+      <div>
+        <label for="orderNumber">Order Number <span style="color:#ff663f">*</span></label>
+        <input type="text" id="orderNumber" name="orderNumber" required placeholder="Enter your order number">
+      </div>
+      <div>
+        <label for="trackingNumber">Tracking Number (optional)</label>
+        <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter tracking number (optional)">
+      </div>
+      <button type="submit">Check Your Order</button>
+    </form>
+    <div class="order-details" id="orderDetails">
+      <!-- Delivery details will appear here -->
+    </div>
+  </div>
+  <script>
+    const orderForm = document.getElementById('orderForm');
+    const orderDetails = document.getElementById('orderDetails');
+    orderForm.onsubmit = function(e) {
+      e.preventDefault();
+      const orderNumber = document.getElementById('orderNumber').value.trim();
+      const trackingNumber = document.getElementById('trackingNumber').value.trim();
+      if (!orderNumber) {
+        orderDetails.style.display = 'none';
+        return;
+      }
+      // Simulate delivery details (replace with real data as needed)
+      let details = `<strong>Order Number:</strong> ${orderNumber}<br>`;
+      if (trackingNumber) {
+        details += `<strong>Tracking Number:</strong> ${trackingNumber}<br>`;
+      }
+      details += `<strong>Status:</strong> In Transit<br>`;
+      details += `<strong>Estimated Delivery:</strong> 2-4 business days<br>`;
+      details += `<strong>Shipping Address:</strong> 123 Main St, Your City`;
+      orderDetails.innerHTML = details;
+      orderDetails.style.display = 'block';
+    };
+  </script>
+</body>
+</html>

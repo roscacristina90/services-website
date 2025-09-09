@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .subscribe-thankyou-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: #000;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  z-index: 9999;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+    }
+    .subscribe-thankyou-message {
+      background: rgba(24,24,24,0.97);
+      color: #ff663f;
+      padding: 2.5rem 3.5rem;
+      border-radius: 2rem;
+      font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+      font-size: 1.2rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      max-width: 90vw;
+      margin: auto;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic&display=swap" rel="stylesheet">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="project">
+    <div class="hero-section">
+      <img
+        class="minimalist-black-interior-with-black-sofa-1268-31786-1"
+  src="pictures/minimalist-black-interior-with-black-sofa-1268-31786-10.png"
+        alt="Minimalist black interior with black sofa"
+      />
+    
+      <div class="nav-bar">
+        <div class="nav-buttons">
+          <a href="about.html" class="about">ABOUT</a>
+          <a href="services.html" class="services">SERVICES</a>
+          <a href="quote.html" class="portfolio">PROJECTS</a>
+          <a href="contact.html" class="contact">CONTACT</a>
+        </div>
+        <div class="logo-flex">
+          <div class="logo" role="img" aria-label="iDesign logo">
+            <div class="ellipse-1"></div>
+            <span class="i-design">
+              <span class="i-design-span">i</span><span class="i-design-span2">Design</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <h1 class="design-your-dream-house">
+        Design your<br>dream house
+      </h1>
+      <p1
+        class="join-us-in-transforming-your-space-into-a-personalized-haven-of-style-where-every-detail-reflects-your-personality-and-taste"
+      >
+        Join us in transforming your space into a personalized haven of style,
+        where every detail reflects your personality and taste.
+      </p1>
+      <p3
+        class="discover-the-art-of-personalized-interior-design-with-us-where-every-space-tells-a-unique-story"
+      >
+        Discover the art of personalized interior design with us, where every
+        space tells a unique story.
+      </p3>
+      <div class="button-primary">
+        <a href="quote.html" class="get-a-free-quote-now" style="display: block; text-decoration: none; color: inherit;">
+          GET A FREE<br>QUOTE NOW
+        </a>
+      </div>
+    </div>
+    <div class="section-services">
+      <div class="cards">
+        <div class="card-living-room service-card">
+          <img
+            class="unsplash-3-b-8-t-4-vnk-xt-0"
+            src="pictures/unsplash-3-b-8-t-4-vnk-xt-00.png"
+            alt="Living Room"
+          />
+          <div class="card-living-room2">
+            <button class="room-btn living-room">LIVING ROOM</button>
+          </div>
+        </div>
+        <div class="card-bedroom service-card">
+          <img
+            class="unsplash-r-uv-w-1-kgd-9-a-4"
+            src="pictures/unsplash-r-uv-w-1-kgd-9-a-40.png"
+            alt="Bedroom"
+          />
+          <button class="room-btn bedroom">BEDROOM</button>
+        </div>
+        <div class="card-kitchen service-card">
+          <img
+            class="unsplash-t-wj-0-qb-jn-4-z-i"
+            src="pictures/unsplash-t-wj-0-qb-jn-4-z-i0.png"
+            alt="Kitchen"
+          />
+          <button class="room-btn kitchen">KITCHEN</button>
+        </div>
+        <div class="card-bathroom service-card">
+          <img
+            class="bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-1"
+            src="pictures/bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-10.png"
+            alt="Bathroom"
+          />
+          <button class="room-btn bathroom">BATHROOM</button>
+        </div>
+        <div class="card-bathroom service-card">
+          <img
+            class="bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-1"
+            src="pictures/bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-11.png"
+            alt="Kids Room"
+          />
+          <button class="room-btn kids-room">KIDS ROOM</button>
+        </div>
+  <div id="gallery-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10001; align-items:center; justify-content:center;">
+    <button id="gallery-close" style="position:absolute; top:2rem; right:2rem; background:none; border:none; color:#fff; font-size:2.5rem; cursor:pointer;">&times;</button>
+    <button id="gallery-prev" style="position:absolute; left:2rem; top:50%; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:2.5rem; cursor:pointer;">&#8592;</button>
+    <img id="gallery-img" src="" alt="Gallery Image" style="max-width:70vw; max-height:80vh; border-radius:1rem; box-shadow:0 2px 24px rgba(0,0,0,0.5); display:block; margin:auto;" />
+    <button id="gallery-next" style="position:absolute; right:2rem; top:50%; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:2.5rem; cursor:pointer;">&#8594;</button>
+    <div id="gallery-counter" style="position:absolute; bottom:2rem; left:50%; transform:translateX(-50%); color:#fff; font-size:1.2rem;"></div>
+  </div>
+  <script>
+  const livingRoomImages = [
+  '../living room/albero-furniture-bratislava-j59xzCv8Hos-unsplash.jpg',
+  '../living room/cat-han-aPD1yNUYP0w-unsplash.jpg',
+  '../living room/collov-home-design-H-1j_s0dhCw-unsplash.jpg',
+  '../living room/dan-gold-4HG3Ca3EzWw-unsplash.jpg',
+  '../living room/francesca-tosolini-qnSTxcs0EEs-unsplash.jpg',
+  '../living room/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg',
+  '../living room/jon-stebbe-paydk0JcIOQ-unsplash.jpg',
+  '../living room/kara-eads-L7EwHkq1B2s-unsplash.jpg',
+  '../living room/lotus-design-n-print-r_y2VBvEOIE-unsplash.jpg',
+  '../living room/point3d-commercial-imaging-ltd-1ZbeKKmR9O8-unsplash.jpg',
+  '../living room/point3d-commercial-imaging-ltd-WIPVrs5meCA-unsplash.jpg',
+  '../living room/spacejoy-9M66C_w_ToM-unsplash.jpg',
+  '../living room/spacejoy-c0JoR_-2x3E-unsplash.jpg',
+  '../living room/spacejoy-cA8GDGBs8g8-unsplash.jpg',
+  '../living room/spacejoy-IH7wPsjwomc-unsplash.jpg',
+  '../living room/spacejoy-k2pumSRYYss-unsplash.jpg',
+  '../living room/spacejoy-KSfe2Z4REEM-unsplash.jpg',
+  '../living room/spacejoy-PyeXkOVmG1Y-unsplash.jpg',
+  '../living room/spacejoy-RqO6kwm4tZY-unsplash.jpg',
+  '../living room/spacejoy-wWXEgQQDoNk-unsplash.jpg',
+  ];
+  const bedroomImages = [
+  '../bedroom/chastity-cortijo-R-w5Q-4Mqm0-unsplash.jpg',
+  '../bedroom/mark-champs-Id2IIl1jOB0-unsplash.jpg',
+  '../bedroom/spacejoy-8Hv3q2bWY3Q-unsplash.jpg',
+  '../bedroom/spacejoy-8wDnylxemkk-unsplash.jpg',
+  '../bedroom/spacejoy-CtPRtg8KSIs-unsplash.jpg',
+  '../bedroom/spacejoy-ctyssSFmXmU-unsplash (1).jpg',
+  '../bedroom/spacejoy-ctyssSFmXmU-unsplash.jpg',
+  '../bedroom/spacejoy-eyEy5YZhSvU-unsplash.jpg',
+  '../bedroom/spacejoy-FX61rYaAfCQ-unsplash.jpg',
+  '../bedroom/spacejoy-IARlbQa6Kc8-unsplash.jpg',
+  '../bedroom/spacejoy-M95SWsUIXTE-unsplash.jpg',
+  '../bedroom/spacejoy-op9evfg3qww-unsplash.jpg',
+  '../bedroom/spacejoy-RUvW1KGD9a4-unsplash.jpg',
+  '../bedroom/spacejoy-Vpbp-7GWTSw-unsplash.jpg',
+  '../bedroom/spacejoy-w94bzo75fBE-unsplash.jpg',
+  '../bedroom/spacejoy-x3mSC1WnWhc-unsplash.jpg',
+  '../bedroom/spacejoy-zIoU4ALVugs-unsplash.jpg',
+  '../bedroom/spacejoy-ZjjzXtzzd6Y-unsplash.jpg',
+  ];
+  const kitchenImages = [
+  '../kitchen/aaron-huber-G7sE2S4Lab4-unsplash.jpg',
+  '../kitchen/clay-elliot-1by_GbwEMwc-unsplash.jpg',
+  '../kitchen/collov-home-design--aDGbdTsBZg-unsplash.jpg',
+  '../kitchen/frames-for-your-heart-JDBVXignFdA-unsplash.jpg',
+  '../kitchen/frames-for-your-heart-MyeOnGcibCQ-unsplash.jpg',
+  '../kitchen/fred-kleber-mxs5EVBPPaM-unsplash.jpg',
+  '../kitchen/im3rd-media-FJZtZldA-uE-unsplash.jpg',
+  '../kitchen/jason-briscoe-AQl-J19ocWE-unsplash.jpg',
+  '../kitchen/jason-leung-jWU9FpLW7fI-unsplash.jpg',
+  '../kitchen/kam-idris-hYb7kbu4x7E-unsplash.jpg',
+  '../kitchen/lotus-design-n-print-hiPh9yms-n0-unsplash.jpg',
+  '../kitchen/lotus-design-n-print-ik9WP2V8Vas-unsplash.jpg',
+  '../kitchen/lotus-design-n-print-l_M3usPiEuM-unsplash.jpg',
+  '../kitchen/lotus-design-n-print-oCw5_evbWyI-unsplash.jpg',
+  '../kitchen/lotus-design-n-print-RwXneIyqxAw-unsplash.jpg',
+  '../kitchen/lotus-design-n-print-UDDULE_eIBY-unsplash.jpg',
+  '../kitchen/lotus-design-n-print-_AK42TQRyCw-unsplash.jpg',
+  '../kitchen/odiseo-castrejon-CX8ooha2yLA-unsplash.jpg',
+  '../kitchen/roam-in-color-RryFk4n-vOs-unsplash.jpg',
+  '../kitchen/rune-enstad-UXFJ-6Zj27M-unsplash.jpg',
+  ];
+  const bathroomImages = [
+  '../bathroom/alexander-fife-rDSwQ_6XFUs-unsplash.jpg',
+  '../bathroom/ali-moradi-G9tpRhcdeco-unsplash.jpg',
+  '../bathroom/alona-gross-f61KO4nDeJA-unsplash.jpg',
+  '../bathroom/alona-gross-ntad0NOoj8o-unsplash.jpg',
+  '../bathroom/backbone-L4iRkKL5dng-unsplash.jpg',
+  '../bathroom/beks-mu-2tEdrFYjfMY-unsplash.jpg',
+  '../bathroom/bilal-mansuri-mmi7E0WrjOk-unsplash.jpg',
+  '../bathroom/billy-jo-catbagan--5m_rM6fs_Q-unsplash.jpg',
+  '../bathroom/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg',
+  '../bathroom/christian-mackie-6BJu73-UJpg-unsplash.jpg',
+  '../bathroom/clay-banks-ckdoA-tv9uw-unsplash.jpg',
+  '../bathroom/masato-tsuchiya-hYexJa2IrVo-unsplash.jpg',
+  '../bathroom/murad-kerimli-N03PjHWOEFA-unsplash.jpg',
+  '../bathroom/nelbali-photography-tMsdgtFLVJE-unsplash.jpg',
+  '../bathroom/point3d-commercial-imaging-ltd-0qWd-IGUqv4-unsplash.jpg',
+  '../bathroom/raquel-navalon-alvarez-TWj0qbJn4zI-unsplash.jpg',
+  '../bathroom/steven-ungermann-Aac7IlKnYX8-unsplash.jpg',
+  ];
+  const kidsRoomImages = [
+  '../kids room/collov-home-design-0dXbMlfLI_8-unsplash.jpg',
+  '../kids room/collov-home-design-liEmt5SChxY-unsplash.jpg',
+  '../kids room/collov-home-design-wN63YFU_JXk-unsplash.jpg',
+  '../kids room/gautam-arora-78Ae6N7rNvI-unsplash.jpg',
+  '../kids room/huy-nguyen-NTmTl3KCSBU-unsplash.jpg',
+  '../kids room/isaac-quesada-QXj7uL_Mc0w-unsplash.jpg',
+  '../kids room/kenny-eliason-b_GtasP517U-unsplash.jpg',
+  '../kids room/lisa-anna--59TQIlcsRk-unsplash.jpg',
+  '../kids room/lisa-anna-or8te0rje5g-unsplash.jpg',
+  '../kids room/the-artwill-AWzFKOH5UIQ-unsplash.jpg',
+  '../kids room/yusheng-deng-BcJ_JmgSoyk-unsplash.jpg',
+  ];
+  let galleryIndex = 0;
+  const galleryModal = document.getElementById('gallery-modal');
+  const galleryImg = document.getElementById('gallery-img');
+  const galleryClose = document.getElementById('gallery-close');
+  const galleryPrev = document.getElementById('gallery-prev');
+  const galleryNext = document.getElementById('gallery-next');
+  const galleryCounter = document.getElementById('gallery-counter');
+  // Open modal for each service card
+  const serviceCards = document.querySelectorAll('.section-services .service-card');
+  if (serviceCards[0]) serviceCards[0].onclick = function() { openGallery(livingRoomImages, 0); };
+  if (serviceCards[1]) serviceCards[1].onclick = function() { openGallery(bedroomImages, 0); };
+  if (serviceCards[2]) serviceCards[2].onclick = function() { openGallery(kitchenImages, 0); };
+  if (serviceCards[3]) serviceCards[3].onclick = function() { openGallery(bathroomImages, 0); };
+  if (serviceCards[4]) serviceCards[4].onclick = function() { openGallery(kidsRoomImages, 0); };
+  function openGallery(images, startIdx) {
+    galleryModal.style.display = 'flex';
+    galleryModal.images = images;
+    galleryIndex = startIdx;
+    showGalleryImage();
+  }
+  function showGalleryImage() {
+    const images = galleryModal.images;
+    galleryImg.src = images[galleryIndex];
+    galleryCounter.textContent = (galleryIndex+1) + ' / ' + images.length;
+  }
+  galleryClose.onclick = function() {
+    galleryModal.style.display = 'none';
+  };
+  galleryPrev.onclick = function() {
+    const images = galleryModal.images;
+    galleryIndex = (galleryIndex - 1 + images.length) % images.length;
+    showGalleryImage();
+  };
+  galleryNext.onclick = function() {
+    const images = galleryModal.images;
+    galleryIndex = (galleryIndex + 1) % images.length;
+    showGalleryImage();
+  };
+  galleryModal.onclick = function(e) {
+    if (e.target === galleryModal) galleryModal.style.display = 'none';
+  };
+  </script>
+      </div>
+      <h2 class="explore-our-professional-interior-design-services">
+        Explore Our Professional<br>Interior Design Services
+      </h2>
+    </div>
+    <div class="section-offer">
+      <div class="frame-629">
+        <div class="new">new</div>
+  <a href="https://cathservices.company.site/products/Fancy-ceiling-lights-p581099500" target="_blank" rel="noopener noreferrer">
+  <img class="unsplash-wb-jeqso-8-wee offer-hover" src="pictures/unsplash-wb-jeqso-8-wee0.png" alt="Offer" />
+  </a>
+      </div>
+    </div>
+    <div class="section-portfolio">
+    <h3 class="o-ur-p-assion-is-the-wow" id="portfolio-section">
+        OUR PASSION IS
+        <br />
+        THE WOW
+      </h3>
+      <div
+        class="explore-a-collection-of-our-finest-works-meticulously-crafted-to-inspire-and-captivate-from-modern-marvels-to-timeless-classics-each-project-reflects-our-unwavering-commitment-to-excellence-and-our-passion-for-creating-spaces-that-elevate-the-human-experience"
+      >
+        Explore a collection of our finest works, meticulously crafted to inspire
+        and captivate. From modern marvels to timeless classics, each project
+        reflects our unwavering commitment to excellence and our passion for
+        creating spaces that elevate the human experience.
+      </div>
+  <img class="unsplash-pmcgxx-2-fo-pg" src="pictures/unsplash-pmcgxx-2-fo-pg0.png" alt="Portfolio" />
+  <!-- Room images for anchor links -->
+  <div style="display:none;">
+  <img id="living-room-img" src="pictures/unsplash-3-b-8-t-4-vnk-xt-00.png" alt="Living Room" />
+  <img id="bedroom-img" src="pictures/unsplash-r-uv-w-1-kgd-9-a-40.png" alt="Bedroom" />
+  <img id="kitchen-img" src="pictures/unsplash-t-wj-0-qb-jn-4-z-i0.png" alt="Kitchen" />
+  <img id="bathroom-img" src="pictures/bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-10.png" alt="Bathroom" />
+  <img id="kids-room-img" src="pictures/bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-11.png" alt="Kids Room" />
+  </div>
+  <img class="arrow-19" src="pictures/arrow-190.svg" />
+      <div class="button-secondary">
+        <a href="quote.html" class="get-a-free-quote-now2" style="display: block; text-decoration: none; color: inherit;">
+          Get a Free Quote Now
+        </a>
+      </div>
+    </div>
+    <div class="section-about-us">
+      <div class="the-architects-of-your-interior-dreams">
+        THE Architects of Your Interior Dreams
+      </div>
+      <div class="cards2">
+  <img class="frame-42" src="pictures/frame-420.png" alt="Team" />
+        <div class="card-3">
+          <img class="frame-422" src="pictures/frame-421.png" alt="Team" />
+        </div>
+        <img
+          class="studio-shot-elder-man-with-grey-hair-23-2148036821-1"
+          src="pictures/studio-shot-elder-man-with-grey-hair-23-2148036821-10.png"
+          alt="Team"
+        />
+        <div
+          class="frame-40"
+          style="
+            background: url(pictures/frame-400.png) center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="card-4"></div>
+        </div>
+        <div
+          class="we-are-more-than-just-interior-designers">
+          We are more than just interior designers – we are creators of immersive
+          experiences, curators of timeless beauty, and architects of comfort. Our
+          team of talented professionals brings a wealth of expertise and
+          creativity to the table, ensuring that each design reflects the unique
+          personality and vision of our clients.
+        </div>
+        <div class="frame-67">
+          <div class="victor-torre">Victor Torre</div>
+          <div class="design-director">Design Director</div>
+        </div>
+        <div class="frame-68">
+          <div class="emily-thomson">Emily Thomson</div>
+          <div class="interior-designer">Interior Designer</div>
+        </div>
+        <div class="frame-672">
+          <div class="diana-parker">Diana Parker</div>
+          <div class="project-manager">Project Manager</div>
+        </div>
+        <div class="frame-69">
+          <div class="clara-carter">Clara Carter</div>
+          <div class="cad-technician">CAD Technician</div>
+        </div>
+      </div>
+    </div>
+   <div class="section-contact">
+  <div id="subscribe-thankyou" class="subscribe-thankyou-overlay" tabindex="-1">
+    <div class="subscribe-thankyou-message">
+      Thank you for subscribing!<br><br>
+      <button id="close-thankyou" style="margin-top:1.5rem; background:#ff663f; color:#fff; border:none; border-radius:1.5rem; padding:0.7rem 2.2rem; font-size:1rem; font-family:inherit; cursor:pointer;">Close</button>
+    </div>
+  </div>
+      <div class="subscribe-to-our-newsletter">subscribe to our newsletter</div>
+      <form id="subscribe-form" class="frame-66" autocomplete="off" style="display:flex; flex-direction:column; gap:2rem; align-items:flex-start;">
+        <div class="imput">
+          <div class="frame-63">
+          </div>
+          <input type="email" id="subscribe-email" name="email" required placeholder="Email address" style="background:none; border:none; outline:none; color:#fff; font-size:1rem; width:31.25rem; font-family:'OpenSans-Regular', sans-serif;" />
+          <div class="line-1"></div>
+        </div>
+        <div class="imput2">
+          <div class="frame-63">
+          </div>
+          <input type="tel" id="subscribe-phone" name="phone" placeholder="Phone number" style="background:none; border:none; outline:none; color:#fff; font-size:1rem; width:31.25rem; font-family:'OpenSans-Regular', sans-serif;" />
+          <div class="line-1"></div>
+        </div>
+      </form>
+      <div class="button-primary2" id="subscribe-btn" style="cursor:pointer;">
+        <div class="get-a-free-quote-now">SUBSCRIBE</div>
+      </div>
+      <script>
+        var subscribeBtn = document.getElementById('subscribe-btn');
+        var subscribeForm = document.getElementById('subscribe-form');
+        var thankyouOverlay = document.getElementById('subscribe-thankyou');
+        var closeThankyou = document.getElementById('close-thankyou');
+        subscribeBtn.onclick = function() {
+          var email = document.getElementById('subscribe-email').value.trim();
+          var phone = document.getElementById('subscribe-phone').value.trim();
+          var emailValid = email && /^\S+@\S+\.\S+$/.test(email);
+          var phoneValid = phone.length > 0;
+          if(!(emailValid && phoneValid)) {
+            subscribeForm.reportValidity();
+          } else {
+            thankyouOverlay.style.display = 'flex';
+            document.body.classList.add('modal-open');
+            subscribeForm.reset();
+            closeThankyou.focus();
+          }
+        };
+        subscribeForm.onsubmit = function(e) {
+          e.preventDefault();
+        };
+        closeThankyou.onclick = function() {
+          thankyouOverlay.style.display = 'none';
+          document.body.classList.remove('modal-open');
+        };
+        thankyouOverlay.onclick = function(e) {
+          if(e.target === thankyouOverlay) {
+            thankyouOverlay.style.display = 'none';
+            document.body.classList.remove('modal-open');
+          }
+        };
+      </script>
+    </div>
+    <div class="section-partners">
+      <div class="frame-84">
+        <div class="crawler-track">
+          <img class="rectangle-65" src="pictures/rectangle-650.png" alt="Partner" />
+          <img class="rectangle-66" src="pictures/rectangle-660.png" alt="Partner" />
+          <img class="rectangle-67" src="pictures/rectangle-670.png" alt="Partner" />
+          <img class="rectangle-69" src="pictures/rectangle-690.png" alt="Partner" />
+          <img class="rectangle-68" src="pictures/rectangle-680.png" alt="Partner" />
+          <img class="rectangle-65" src="pictures/rectangle-650.png" alt="Partner" />
+          <img class="rectangle-66" src="pictures/rectangle-660.png" alt="Partner" />
+          <img class="rectangle-67" src="pictures/rectangle-670.png" alt="Partner" />
+          <img class="rectangle-69" src="pictures/rectangle-690.png" alt="Partner" />
+          <img class="rectangle-68" src="pictures/rectangle-680.png" alt="Partner" />
+        </div>
+      </div>
+  <div class="meet-our-partners" id="meet-our-partners">Meet our partners</div>
+    </div>
+    <div class="footer">
+      <div class="i-design2">
+        <span>
+          <span class="i-design-2-span">i</span>
+          <span class="i-design-2-span2">Design</span>
+        </span>
+      </div>
+      <div class="ellipse-12"></div>
+      <div
+        class="crafted-with-care-for-your-comfort-and-style-let-s-design-your-dream-space-together"
+      >
+        Crafted with care for your comfort and style. Let's design your dream
+        space together.
+      </div>
+      <div class="menu">Menu</div>
+      <div class="frame-81">
+  <a href="services.html" class="services2">Services</a>
+    <a href="Project.html" class="portfolio">Projects</a>
+  <a href="about.html" class="about-us">About us</a>
+  <a href="#meet-our-partners" class="our-partners">Our partners</a>
+  <a href="https://cathservices.company.site/products/Fancy-ceiling-lights-p581099500" class="offers" target="_blank" rel="noopener noreferrer">Offers</a>
+      </div>
+      <div class="support">Support</div>
+      <div class="frame-83">
+  <a href="contact.html" class="contact-us">Contact us</a>
+        <div class="your-orders">Your orders</div>
+  <a href="sitemap.html" class="site-map">Site map</a>
+  <a href="terms.html" class="terms-and-conditions">Terms and conditions</a>
+  <a href="legal.html" class="legal-privacy">Legal / Privacy</a>
+      </div>
+      <div class="copyright-2024-i-design-all-rights-reserved">
+        Copyright © 2025 iDesign All Rights Reserved.
+      </div>
+      <div class="follow-us">FOLLOW US:</div>
+      <div class="frame-71">
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;vertical-align:middle;">
+      <svg class="facebook" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="15.5" fill="#181818" stroke="#fff" stroke-width="1" style="display:none;"/>
+        <path d="M21.333 16.001h-3.2v8h-3.2v-8h-1.6v-2.667h1.6v-1.6c0-2.133 1.067-3.2 3.2-3.2h2.133v2.667h-1.333c-0.533 0-0.8 0.267-0.8 0.8v1.333h2.133l-0.267 2.667z" fill="#fff"/>
+      </svg>
+    </a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;vertical-align:middle;">
+      <svg class="instagram" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+        <circle cx="27" cy="27" r="26.5" fill="#181818" stroke="#fff" stroke-width="1.5" style="display:none;"/>
+        <rect x="15" y="15" width="24" height="24" rx="6.5" fill="none" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="27" cy="27" r="6.2" fill="none" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="34.2" cy="20.2" r="1.7" fill="#fff"/>
+      </svg>
+    </a>
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;vertical-align:middle;">
+      <svg class="social-youtube" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+        <circle cx="27" cy="27" r="26.5" fill="#181818" stroke="#fff" stroke-width="1.5" style="display:none;"/>
+        <rect x="17" y="17" width="20" height="20" rx="5.5" fill="none" stroke="#fff" stroke-width="1.5"/>
+        <polygon points="25.5,22.5 25.5,31.5 32.5,27" fill="#fff"/>
+      </svg>
+    </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Chat popup include -->
+  <script>
+    fetch('chat-popup.html')
+      .then(r => r.text())
+      .then(html => {
+        const div = document.createElement('div');
+        div.innerHTML = html;
+        document.body.appendChild(div);
+      });
+  </script>
+</body>
+</html>

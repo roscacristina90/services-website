@@ -1,0 +1,1835 @@
+.footer a,
+.footer .services2,
+.footer .portfolio,
+.footer .portofoglio,
+.footer .about-us,
+.footer .our-partners,
+.footer .offers,
+.footer .contact-us {
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.footer .your-orders,
+.footer .site-map,
+.footer .terms-and-conditions,
+.footer .legal-privacy {
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.footer a:hover,
+.footer .services2:hover,
+.footer .portfolio:hover,
+.footer .portofoglio:hover,
+.footer .about-us:hover,
+.footer .our-partners:hover,
+.footer .offers:hover,
+.footer .contact-us:hover {
+  color: #ff663f !important;
+}
+.footer .your-orders:hover,
+.footer .site-map:hover,
+.footer .terms-and-conditions:hover,
+.footer .legal-privacy:hover {
+  color: #ff663f !important;
+}
+.section-portofolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+  width: 100%;
+}
+.section-portofolio img {
+  margin: 1.5rem auto;
+  display: block;
+  max-width: 90vw;
+  height: auto;
+}
+.section-portofolio .button-secondary {
+  margin-top: 2rem;
+}
+/* Hide scrollbars for all browsers */
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.room-btn {
+  background: none;
+  border: none;
+  color: var(--paragraf-white, #f0efef);
+  text-align: center;
+  font-family: var(--paragraf-text-style-font-family, "OpenSans-Regular", sans-serif);
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 9.25rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  text-transform: uppercase;
+}
+.room-btn:hover, .room-btn:focus {
+  color: #ff663f;
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-section, .minimalist-black-interior-with-black-sofa-1268-31786-1 {
+    height: 40rem;
+  }
+  .nav-bar {
+    height: 60px;
+    font-size: 1rem;
+  }
+  .button-primary {
+    width: 7rem;
+    height: 7rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .cards {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section, .minimalist-black-interior-with-black-sofa-1268-31786-1 {
+    height: 25rem;
+  }
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .nav-buttons {
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .button-primary {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin: 1rem 0;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .card-living-room2, .card-living-room, .card-bedroom, .card-kitchen, .card-bathroom {
+    width: 90vw;
+    max-width: 400px;
+  }
+  .unsplash-3-b-8-t-4-vnk-xt-0, .unsplash-r-uv-w-1-kgd-9-a-4, .unsplash-t-wj-0-qb-jn-4-z-i, .bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-1 {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 14px;
+  }
+  .project {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+  }
+  .hero-section, .minimalist-black-interior-with-black-sofa-1268-31786-1 {
+    height: 15rem;
+    min-height: 10rem;
+  }
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .nav-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 0;
+  }
+  .button-primary {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
+  .get-a-free-quote-now {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .card-living-room2, .card-living-room, .card-bedroom, .card-kitchen, .card-bathroom {
+    width: 100%;
+    max-width: 100vw;
+  }
+  .unsplash-3-b-8-t-4-vnk-xt-0, .unsplash-r-uv-w-1-kgd-9-a-4, .unsplash-t-wj-0-qb-jn-4-z-i, .bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-1 {
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+  }
+  .section-services, .section-offer, .section-portofolio, .section-about-us, .section-contact, .section-partners, .footer {
+    padding: 0 0.5rem;
+    margin: 0;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .frame-81, .frame-83, .frame-71 {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  .copyright-2024-i-design-all-rights-reserved {
+    position: static;
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .follow-us {
+    position: static;
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .facebook, .instagram, .social-youtube {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+html, body {
+  height: 100%;
+}
+
+.project {
+  box-sizing: border-box;
+}
+.project {
+  background: #0d0c0c;
+  width: 100%;
+  height:100%;
+  position: relative;
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+}
+.hero-section {
+  width: 100vw;
+  height: 60rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.minimalist-black-interior-with-black-sofa-1268-31786-1 {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  width: 100vw;
+  height: 60rem;
+  position: absolute;
+  left: 0rem;
+  top: 0.0625rem;
+  object-fit: cover;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; 
+  position: absolute;
+  right:auto;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 100;
+  background: transparent; 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 1rem;
+  padding-top: 0;
+  margin-left: 200px;
+  margin-right: 0; 
+  color: #f0efef;
+  border: none;
+  cursor: pointer;
+}
+  
+.logo-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* align logo to the right */
+  height: 100%;
+  padding-right: 270px;
+}
+.logo { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; 
+  background: rgba(255, 255, 255, 0);
+  width: 4.5rem;
+  height: 1.625rem;
+  position: absolute;
+  left: 270px;
+  overflow: hidden;
+}
+.ellipse-1 {
+  background: #ff663f;
+  border-radius: 50%;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+.i-design {
+  color: #ffffff;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 1.25rem;
+  line-height: 130%;
+  font-weight: 400;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+.i-design-span {
+  font-family: "OpenSans-BoldItalic", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.i-design-span2 {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+}
+.about {
+  color: var(--paragraf-white-color,  #f0efef);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+    font-size: 1rem;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+  .about:hover,
+  .about:active {
+    color: #ff663f;
+  }
+.services {
+  color: var(--paragraf-white-color, #ffffff);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+   font-size: 1rem;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+  .services:hover,
+  .services:active {
+    color: #ff663f;
+    background: none;
+  }
+.portfolio {
+  color: var(--paragraf-white-color, #ffffff);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: 1rem;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+  .portfolio:hover,
+  .portfolio:active {
+    color: #ff663f;
+  }
+.contact {
+  color: var(--paragraf-white-color,  #f0efef);
+  text-align: center;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+  .contact:hover,
+  .contact:active {
+    color: #ff663f;
+  }
+.design-your-dream-house {
+  color: var(--white-h1, #fbf6f4);
+  text-align: left;
+  font-family: var(--h1-font-family, "OpenSans-Bold", sans-serif);
+  font-size: var(--h1-font-size, 4.375rem);
+  line-height: var(--h1-line-height, 100%);
+  font-weight: var(--h1-font-weight, 700);
+  text-transform: uppercase;
+  position: absolute;
+  left: calc(50% - 37.5rem);
+  top: 43.1875rem;
+  white-space: pre-line;
+}
+.join-us-in-transforming-your-space-into-a-personalized-haven-of-style-where-every-detail-reflects-your-personality-and-taste {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: absolute;
+  right: 270px;
+  top: 8.3125rem;
+  width: 16.25rem;
+}
+.discover-the-art-of-personalized-interior-design-with-us-where-every-space-tells-a-unique-story {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: absolute;
+  left: calc(50% - 37.375rem);
+  top: 8.3125rem;
+  width: 10.25rem;
+}
+.button-primary {
+  border-radius: 62.5rem;
+  color: #f0efef;
+  border-style: solid;
+  border-color: var(--white-hero-title, #ffffff);
+  border-width: 0.0625rem;
+  padding: 0.875rem 2rem 0.875rem 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  width: 9.375rem;
+  height: 9.375rem;
+  position: absolute;
+  left: calc(50% - -21.3125rem);
+  top: 14.8125rem;
+}
+.button-primary .get-a-free-quote-now {
+  color:  #f0efef;
+}
+.button-primary:hover,
+.button-primary:active {
+  background: #ff663f;
+  color: #f0efef;
+  border-color:  #f0efef;
+}
+.button-primary:hover .get-a-free-quote-now,
+.button-primary:active .get-a-free-quote-now {
+  color:  #f0efef;
+}
+.get-a-free-quote-now {
+  color: var(--paragraf-white, #f0efef);
+  text-align: center;
+  font-family: var(--button-text-style-font-family, "OpenSans-Regular", sans-serif);
+  font-size: var(--button-text-style-font-size, 1rem);
+  line-height: var(--button-text-style-line-height, 130%);
+  font-weight: var(--button-text-style-font-weight, 400);
+  text-transform: uppercase;
+  position: absolute;
+}
+.section-services {          
+  max-width:100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70rem;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:center;
+  width: 100%;
+  position: relative;
+  left: 0rem;
+  margin-top: 11.25rem;
+  gap: 2.7rem; 
+}
+.card-living-room {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.unsplash-3-b-8-t-4-vnk-xt-0 {
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  width: 12.625rem;
+  height: 11.625rem;
+  position: relative;
+  object-fit: cover;
+}
+.card-living-room2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 12.625rem;
+  position: relative;
+}
+.living-room {
+  color: var(--paragraf-white, #f0efef);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 9.25rem;
+}
+.card-bedroom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.unsplash-r-uv-w-1-kgd-9-a-4 {
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  width: 12.625rem;
+  height: 11.625rem;
+  position: relative;
+  object-fit: cover;
+}
+.bedroom {
+  color: var(--paragraf-white, #f0efef);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 9.4375rem;
+}
+.card-kitchen {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.unsplash-t-wj-0-qb-jn-4-z-i {
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  width: 12.625rem;
+  height: 11.625rem;
+  position: relative;
+  object-fit: cover;
+}
+.kitchen {
+  color: var(--paragraf-white, #f0efef);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 9.375rem;
+}
+.card-bathroom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-1 {
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  width: 12.625rem;
+  height: 11.625rem;
+  position: relative;
+  object-fit: cover;
+}
+.bathroom {
+  color: var(--paragraf-white, #f0efef);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 8.75rem;
+}
+.kids-room {
+  color: var(--paragraf-white, #f0efef);
+  text-align: center;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 8.75rem;
+}
+.explore-our-professional-interior-design-services {
+  color: var(--white-h1, #fbf6f4);
+  text-align: center;
+  font-family: var(--h2-font-family, "OpenSans-SemiBold", sans-serif);
+  font-size: 2.5rem;
+  line-height: var(--h2-line-height, 120%);
+  font-weight: var(--h2-font-weight, 600);
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+   transform: translateX(-50%);
+  top: 0rem;
+  width: 60rem;
+}
+.section-offer {
+  width: 85vw;
+  max-width:100vw;
+  height: 31.224375rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10rem;
+}
+.frame-629 {
+  width: 85.114375rem;
+  height: 32.711875rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0.17625rem;
+}
+.new {
+  max-width:100vw;
+  color: #f9f9f9;
+  text-align:center;/* Center text inside the element */
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 33.5rem;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  transform:translateX(-50%);
+  top: 0rem;
+  height: 32.711875rem;
+}
+.unsplash-wb-jeqso-8-wee {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  border-radius: 1.015625rem;
+  width: 19.229375rem;
+  height: 25.005rem;
+  position: absolute;
+  left: 40.62625rem;
+  top: 0.01375rem;
+  object-fit: cover;
+}
+.section-portfolio {
+  width: 100%;
+  position:relative;
+  left: 270px;
+  margin-top: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.o-ur-p-assion-is-the-wow {
+  color: var(--white-h1, #fbf6f4);
+  font-family: var(--h3-font-family, "OpenSans-SemiBold", sans-serif);
+  font-size: var(--h3-font-size, 2.5rem);
+  line-height: var(--h3-line-height, 120%);
+  font-weight: var(--h3-font-weight, 600);
+  text-transform: uppercase;
+  position: absolute;
+  left: 0rem;
+  top: 5rem;
+}
+.explore-a-collection-of-our-finest-works-meticulously-crafted-to-inspire-and-captivate-from-modern-marvels-to-timeless-classics-each-project-reflects-our-unwavering-commitment-to-excellence-and-our-passion-for-creating-spaces-that-elevate-the-human-experience {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: absolute;
+  left: 0rem;
+  top: 13.75rem;
+  width: 23.1875rem;
+}
+.unsplash-pmcgxx-2-fo-pg {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  border-radius: 1.5rem;
+  width: 43.9375rem;
+  height: 31.8125rem;
+  position: absolute;
+  left: 29.75rem;
+  top: 0rem;
+  object-fit: cover;
+}
+.arrow-19 {
+  color: var(--paragraf-white, #f0efef);
+  width: 3.9375rem;
+  height: 0rem;
+  position: absolute;
+  left: 80px;
+  top: 3.125rem;
+}
+.button-secondary {
+  background: var(--accent-color, #ff663f);
+  border-radius: 62.5rem;
+  padding: 0.875rem 2rem 0.875rem 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0rem;
+  top: 23.75rem;
+  color: #fbf6f4;
+}
+.get-a-free-quote-now2 {
+  color: var(--paragraf-white, #fbf6f4);
+  text-align: left;
+  font-family: var(
+    --button-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--button-text-style-font-size, 1rem);
+  line-height: var(--button-text-style-line-height, 130%);
+  font-weight: var(--button-text-style-font-weight, 400);
+  text-transform: uppercase;
+  position: relative;
+  height: 1.3125rem;
+}
+.section-about-us {
+  width:100%;
+  position: relative;
+  left: 270px;
+  margin-top: 42rem;
+
+}
+.the-architects-of-your-interior-dreams {
+  color: var(--white-title-section, #ffffff);
+  text-align: center;
+  font-family: var(--h4-font-family, "OpenSans-SemiBold", sans-serif);
+  font-size: var(--h4-font-size, 2.5rem);
+  line-height: var(--h4-line-height, 100%);
+  font-weight: var(--h4-font-weight, 600);
+  text-transform: uppercase;
+  position: absolute;
+  left: 270px;
+  top: 0rem;
+  width: 42rem;
+}
+.cards2 {
+  border-radius: 0.875rem;
+  width: 73.6875rem;
+  height: 49.9375rem;
+  position: absolute;
+  left: 0rem;
+  top: 10rem;
+}
+.cards2 img,
+.cards2 .frame-40 {
+  animation: float-architects 3.5s ease-in-out infinite alternate;
+}
+.cards2 .card-3 img {
+  animation-delay: 1s;
+}
+.cards2 .frame-42 {
+  animation-delay: 0.5s;
+}
+.cards2 .studio-shot-elder-man-with-grey-hair-23-2148036821-1 {
+  animation-delay: 1.5s;
+}
+.cards2 .frame-40 {
+  animation-delay: 2s;
+}
+
+@keyframes float-architects {
+  0% {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  }
+  50% {
+    transform: translateY(-18px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  }
+}
+.frame-42 {
+  border-radius: 0.875rem;
+  width: 16.9375rem;
+  height: 17.875rem;
+  position: absolute;
+  left: 0rem;
+  top: 0.025625rem;
+  object-fit: cover;
+}
+.card-3 {
+  border-radius: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 19rem;
+  top: 0rem;
+  ;
+}
+.frame-422 {
+  border-radius: 0.875rem 0.875rem 0rem 0rem;
+  flex-shrink: 0;
+  width: 16.9375rem;
+  height: 17.875rem;
+  position: relative;
+  object-fit: cover;
+}
+.studio-shot-elder-man-with-grey-hair-23-2148036821-1 {
+  border-radius: 0.875rem;
+  width: 16.625rem;
+  height: 18.0625rem;
+  position: absolute;
+  left: 57rem;
+  top: 0rem;
+  object-fit: cover;
+}
+.frame-40 {
+  border-radius: 0.875rem;
+  width: 16.9375rem;
+  height: 18.625rem;
+  position: absolute;
+  left: 37.75rem;
+  top: 18.0625rem;
+  overflow: hidden;
+}
+.card-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  width: 16.9375rem;
+  height: 4.375rem;
+  position: absolute;
+  left: 0rem;
+  top: 13.1875rem;
+}
+.we-are-more-than-just-interior-designers {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: absolute;
+  left: calc(50% - 36.84375rem);
+  top: 34.54rem;
+  width: 29.5rem;
+  margin-bottom:0px;
+}
+.frame-67 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0rem;
+  top: 19.125rem;
+}
+.victor-torre {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --subtitle-text-font-family,
+    "OpenSans-SemiBold",
+    sans-serif
+  );
+  font-size: var(--subtitle-text-font-size, 1.75rem);
+  line-height: var(--subtitle-text-line-height, 100%);
+  font-weight: var(--subtitle-text-font-weight, 600);
+  text-transform: uppercase;
+  position: relative;
+}
+.design-director {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.frame-68 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 19rem;
+  top: 19.125rem;
+}
+.emily-thomson {
+  color: var(--accent-color, #ff663f);
+  text-align: left;
+  font-family: var(
+    --subtitle-text-font-family,
+    "OpenSans-SemiBold",
+    sans-serif
+  );
+  font-size: var(--subtitle-text-font-size, 1.75rem);
+  line-height: var(--subtitle-text-line-height, 100%);
+  font-weight: var(--subtitle-text-font-weight, 600);
+  text-transform: uppercase;
+  position: relative;
+}
+.interior-designer {
+  color: var(--accent-color, #ff663f);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.frame-672 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  left: 37.75rem;
+  top: 37.9375rem;
+}
+.diana-parker {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --subtitle-text-font-family,
+    "OpenSans-SemiBold",
+    sans-serif
+  );
+  font-size: var(--subtitle-text-font-size, 1.75rem);
+  line-height: var(--subtitle-text-style-line-height, 100%);
+  font-weight: var(--subtitle-text-font-weight, 600);
+  text-transform: uppercase;
+  position: relative;
+  width: 13rem;
+  white-space: nowrap;
+}
+.project-manager {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.frame-69 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 57rem;
+  top: 18.6875rem;
+}
+.clara-carter {
+  display: flex;
+  flex-direction:row;
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --subtitle-text-font-family,
+    "OpenSans-SemiBold",
+    sans-serif
+  );
+  font-size: var(--subtitle-text-font-size, 1.75rem);
+  line-height: var(--subtitle-text-line-height, 100%);
+  font-weight: var(--subtitle-text-font-weight, 600);
+  text-transform: uppercase;
+  position: relative;
+  width: 13rem;
+  white-space: nowrap;
+}
+.cad-technician {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+
+.section-contact {
+  width: 49.625rem;
+  height: 80.25rem;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 248.375rem;
+  overflow: hidden;
+}
+.subscribe-to-our-newsletter {
+  color: var(--white-h1, #fbf6f4);
+  text-align: center;
+  font-family: var(--h5-font-family, "OpenSans-SemiBold", sans-serif);
+  font-size: var(--h5-font-size, 2.5rem);
+  line-height: var(--h5-line-height, 100%);
+  font-weight: var(--h5-font-weight, 600);
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  top: 0rem;
+}
+.frame-66 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 3.5rem;
+  top: 8.25rem;
+}
+.imput, .imput2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 31.25rem;
+  position: relative;
+}
+.frame-63 {
+  display: flex;
+  flex-direction: row;
+  gap: 25.3125rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.email-address {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 8.3125rem;
+}
+.line-1 {
+  margin-top: -0.0625rem;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 0.0625rem 0 0 0;
+  flex-shrink: 0;
+  width: 31.25rem;
+  height: 0rem;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.imput2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.phone {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 8.3125rem;
+}
+.button-primary2 {
+  border-radius: 62.5rem;
+  border-style: solid;
+  border-color: var(--white-hero-title, #ffffff);
+  border-width: 0.0625rem;
+  padding: 0.875rem 2rem 0.875rem 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  width: 9.375rem;
+  height: 9.375rem;
+  position: absolute;
+  left: calc(50% - -15.4375rem);
+  top: 7.4rem;
+}
+.button-primary2:hover, .button-primary2:active {
+  background: #ff663f;
+  color: #f0efef;
+  border-color: #ff663f;
+}
+.section-partners {
+  width: 100vw;
+  max-width: 100%;
+  height: 17.150625rem;
+  position: relative;
+  left: 0;
+  right:0;
+  top: 88rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.frame-84 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  position: absolute;
+  left: 0rem;
+  top: 6.5rem;
+  overflow: hidden;
+}
+.frame-84 .crawler-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: crawler 20s linear infinite;
+  gap: 2rem;
+}
+@keyframes crawler {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.footer {
+  width: 80vw;
+  max-width: 100vw;
+  height: 18.375rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 305rem;
+  overflow: hidden;
+  margin-left: 100px;
+  margin-right:auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.frame-81, .frame-83 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.support {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 1.125rem;
+  line-height: 130%;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: absolute;
+  left: 62.4375rem;
+  top: 0.1875rem;
+  width: 6.1875rem;
+}
+.frame-71 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18.75rem;
+  height: 10.375rem;
+  position: relative;
+  object-fit: cover;
+}
+.rectangle-67 {
+  border-radius: 0.625rem;
+  flex-shrink: 0;
+  width: 18.9375rem;
+  height: 10.375rem;
+  position: relative;
+  object-fit: cover;
+}
+.rectangle-69 {
+  border-radius: 0.625rem;
+  flex-shrink: 0;
+  width: 18.75rem;
+  height: 10.625rem;
+  position: relative;
+  object-fit: cover;
+}
+.rectangle-68 {
+  border-radius: 0.625rem;
+  flex-shrink: 0;
+  width: 19.0625rem;
+  height: 10.625rem;
+  position: relative;
+  object-fit: cover;
+}
+.meet-our-partners {
+  color: var(--white-h1, #fbf6f4);
+  text-align: center;
+  font-family: var(--h6-font-family, "OpenSans-SemiBold", sans-serif);
+  font-size: var(--h6-font-size, 2.5rem);
+  line-height: var(--h6-line-height, 100%);
+  font-weight: var(--h6-font-weight, 600);
+  text-transform: uppercase;
+  position: absolute;
+  left: calc(50% - 21.0625rem);
+  top: 0rem;
+  width: 42rem;
+  height: 2.75rem;
+}
+.i-design2 {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 2rem;
+  font-weight: 390;
+  position: absolute;
+  left:0rem;
+  top: 0.375rem;
+}
+.i-design-2-span {
+  font-family: "OpenSans-BoldItalic", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.i-design-2-span2 {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+}
+.ellipse-12 {
+  background: #ff663f;
+  border-radius: 50%;
+  width: 0.96125rem;
+  height: 0.96125rem;
+  position: absolute;
+  left: 0rem;
+  top: 0.1875rem;
+}
+.crafted-with-care-for-your-comfort-and-style-let-s-design-your-dream-space-together {
+  color: var(--white-h1, #fbf6f4);
+  text-align: left;
+  font-family: var(
+    --subtitle-text-font-family,
+    "OpenSans-SemiBold",
+    sans-serif
+  );
+  font-size: var(--subtitle-text-font-size, 28px);
+  line-height: var(--subtitle-text-style-line-height, 100%);
+  font-weight: var(--subtitle-text-font-weight, 600);
+  text-transform: uppercase;
+  position: absolute;
+  left: 13.25rem;
+  top: 0.1875rem;
+  width: 32rem;
+  height: 5.125rem;
+}
+.menu {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --subtitle-text-2-font-family,
+    "OpenSans-SemiBold",
+    sans-serif
+  );
+  font-size: var(--subtitle-text-2-font-size, 1.125rem);
+  line-height: var(--subtitle-text-2-line-height, 130%);
+  font-weight: var(--subtitle-text-2-font-weight, 600);
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: absolute;
+  left: 50.8125rem;
+  top: 0.1875rem;
+  width: 4.125rem;
+  height: 1.4375rem;
+}
+.frame-81 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 50.8125rem;
+  top: 2.875rem;
+}
+.services2 {
+  color: var(--paragraf-white, #f0efef);
+  text-align: right;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.portofolio {
+  color: var(--paragraf-white, #f0efef);
+  text-align: right;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.about-us {
+  color: var(--paragraf-white, #f0efef);
+  text-align: right;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.our-partners {
+  color: var(--paragraf-white, #f0efef);
+  text-align: right;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.offers {
+  color: var(--paragraf-white, #f0efef);
+  text-align: right;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: 130%;
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+}
+.s-upport {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 1.125rem;
+  line-height: 130%;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: absolute;
+  left: 62.4375rem;
+  top: 0.1875rem;
+  width: 6.1875rem;
+}
+.frame-83 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  left: 62.4375rem;
+  top: 2.875rem;
+}
+.contact-us {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 6.25rem;
+}
+.your-orders {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 6.9375rem;
+}
+.site-map {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 5.125rem;
+}
+.terms-and-conditions {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 12.5625rem;
+}
+.legal-privacy {
+  color: var(--paragraf-white, #f0efef);
+  text-align: left;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: relative;
+  width: 8.0625rem;
+}
+.copyright-2024-i-design-all-rights-reserved {
+  color: var(--footer-grey-element-color, #777777);
+  text-align: right;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: absolute;
+  left: 13.1875rem;
+  top: 13.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.follow-us {
+  color: var(--paragraf-white, #f0efef);
+  text-align: right;
+  font-family: var(
+    --paragraf-text-style-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-text-style-font-size, 1rem);
+  line-height: var(--paragraf-text-style-line-height, 130%);
+  font-weight: var(--paragraf-text-style-font-weight, 400);
+  position: absolute;
+  left: 46.3125rem;
+  top: 13.625rem;
+  width: 10.3125rem;
+}
+
+.facebook {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  margin-left: 112rem;
+ margin-bottom: -18rem;
+ 
+}
+.instagram {
+  flex-shrink: 0;
+  width: 1.3125rem;
+  height: 1.3125rem;
+  position: relative;
+   margin-bottom: -18rem;
+ 
+
+
+}
+.social-youtube {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  margin-bottom: -18rem;
+}
+.card-living-room:hover .unsplash-3-b-8-t-4-vnk-xt-0,
+.card-bedroom:hover .unsplash-r-uv-w-1-kgd-9-a-4,
+.card-kitchen:hover .unsplash-t-wj-0-qb-jn-4-z-i,
+.card-bathroom:hover .bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-1 {
+  transform: scale(1.07) translateY(-10px);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  z-index: 2;
+}
+.card-living-room .unsplash-3-b-8-t-4-vnk-xt-0,
+.card-bedroom .unsplash-r-uv-w-1-kgd-9-a-4,
+.card-kitchen .unsplash-t-wj-0-qb-jn-4-z-i,
+.card-bathroom .bathroom-interior-design-with-matte-black-bath-generative-ai-587448-2021-1 {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.card-living-room:hover .room-btn.living-room,
+.card-bedroom:hover .room-btn.bedroom,
+.card-kitchen:hover .room-btn.kitchen,
+.card-bathroom:hover .room-btn.bathroom {
+  color: #ff663f;
+}
+.quote-section {
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 5rem auto 0 auto;
+  background: #181818;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.15);
+}
+
+.quote-title {
+  text-align: center;
+  color: var(--white-h1, #fbf6f4);
+  font-family: var(--h1-font-family, "OpenSans-Bold", sans-serif);
+  font-size: var(--h1-font-size, 2.5rem);
+  line-height: var(--h1-line-height, 100%);
+  font-weight: var(--h1-font-weight, 700);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.quote-form input,
+.quote-form textarea {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-family: var(--paragraf-text-style-font-family, "OpenSans-Regular", sans-serif);
+  color: var(--paragraf-white, #f0efef);
+  background: #232323;
+}
+
+.quote-form button {
+  background: var(--accent-color, #ff663f);
+  color: hsl(17, 47%, 97%);
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: var(--button-text-style-font-family, "OpenSans-Regular", sans-serif);
+}
+
+.quote-form button:hover {
+  background: #e6552e;
+}
+.quote-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: modal-fade-in 0.3s;
+}
+.quote-modal-content {
+  background: rgba(24,24,24,0.97);
+  color: #ff663f;
+  padding: 2.5rem 3.5rem;
+  border-radius: 2rem;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #ff663f;
+  animation: modal-content-pop 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes modal-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-content-pop {
+  0% { transform: scale(0.85); opacity: 0; }
+  80% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.offer-hover {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.offer-hover:hover {
+  transform: scale(1.07) translateY(-10px);
+  z-index: 2;
+}
+
+/* Breadcrumbs Section */
+.breadcrumbs {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 1.05rem;
+  color: #ff663f;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #ff663f;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.2em 0.5em 0.2em 0.2em;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: rgba(255,102,63,0.08);
+}
+.breadcrumbs a {
+  color: #ff663f;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+.breadcrumbs a:first-child {
+  color: hsl(17, 47%, 97%);
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumb-separator {
+  color: #ff663f;
+  font-size: 1.2em;
+  margin: 0 0.2em;
+}
+.breadcrumb-current {
+  color: #ff663f;
+  opacity: 0.7;
+  cursor: default;
+}
+.subscribe-thankyou-overlay {
+  display: none;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: #0d0c0c !important;
+  opacity: 1 !important;
+  z-index: 2147483647 !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  pointer-events: all !important;
+}
+.subscribe-thankyou-message {
+  filter: none !important;
+  background: #0d0c0c !important;
+  color: #ff663f;
+  padding: 3.5rem;
+  border-radius: 2rem;
+  font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif);
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 90vw;
+  z-index: 2147483648 !important;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  height: 100vh !important;
+  position: fixed !important;
+  width: 100vw !important;
+}
