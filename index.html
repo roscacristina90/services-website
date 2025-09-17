@@ -598,15 +598,15 @@
   
   <!-- Chat popup directly embedded -->
   <div id="chat-fab">
-    <button id="chat-fab-btn" aria-label="Chat with us" style="display: flex; align-items: center; gap: 0.5rem;">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button id="chat-fab-btn" aria-label="Chat with us" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.5rem 1.2rem; background: #ff663f; border-radius: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border: none; cursor: pointer;">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
         <circle cx="16" cy="16" r="16" fill="#ff663f"/>
         <path d="M10 13C10 11.3431 11.3431 10 13 10H19C20.6569 10 22 11.3431 22 13V19C22 20.6569 20.6569 22 19 22H13C11.3431 22 10 20.6569 10 19V13Z" stroke="white" stroke-width="2"/>
         <circle cx="14" cy="16" r="1" fill="white"/>
         <circle cx="16" cy="16" r="1" fill="white"/>
         <circle cx="18" cy="16" r="1" fill="white"/>
       </svg>
-      <span style="color:#fff; font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif); font-size: 1.05rem; font-weight: 400; letter-spacing: 0.5px;">Chat</span>
+      <span style="color:#fff; font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif); font-size: 1.05rem; font-weight: 400; letter-spacing: 0.5px; line-height: 1; display: block;">Chat</span>
     </button>
   </div>
   <div id="chat-popup" style="display:none;">
