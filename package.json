@@ -1,0 +1,9 @@
+{
+  "name": "furniture-website",
+  "version": "1.0.0",
+  "description": "A modern furniture website.",
+  "main": "index.html",
+  "scripts": {},
+  "author": "Cristina",
+  "license": "MIT"
+}
