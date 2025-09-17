@@ -1274,14 +1274,11 @@ html, body {
 .frame-71 {
   display: flex;
   flex-direction: row;
-  gap: 0.625rem;
+  gap: 1.2rem;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  width: 18.75rem;
-  height: 10.375rem;
-  position: relative;
-  object-fit: cover;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 .rectangle-67 {
   border-radius: 0.625rem;
@@ -1575,43 +1572,33 @@ html, body {
 }
 .follow-us {
   color: var(--paragraf-white, #f0efef);
-  text-align: right;
-  font-family: var(
-    --paragraf-text-style-font-family,
-    "OpenSans-Regular",
-    sans-serif
-  );
-  font-size: var(--paragraf-text-style-font-size, 1rem);
-  line-height: var(--paragraf-text-style-line-height, 130%);
-  font-weight: var(--paragraf-text-style-font-weight, 400);
-  position: absolute;
-  left: 46.3125rem;
-  top: 13.625rem;
-  width: 10.3125rem;
+  text-align: center;
+  font-family: var(--paragraf-text-style-font-family, "OpenSans-Regular", sans-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  position: static;
+  width: auto;
 }
 
 .facebook {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 1.5rem;
-  position: relative;
-  margin-left: 112rem;
- margin-bottom: -18rem;
- 
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 0.2rem;
+  display: inline-block;
 }
 .instagram {
-  flex-shrink: 0;
-  width: 1.3125rem;
-  height: 1.3125rem;
-  position: relative;
-   margin-bottom: -18rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 0.2rem;
+  display: inline-block;
 }
 .social-youtube {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 1.5rem;
-  position: relative;
-  margin-bottom: -18rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 0.2rem;
+  display: inline-block;
 }
 .card-living-room:hover .unsplash-3-b-8-t-4-vnk-xt-0,
 .card-bedroom:hover .unsplash-r-uv-w-1-kgd-9-a-4,
