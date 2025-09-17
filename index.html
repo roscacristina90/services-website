@@ -596,15 +596,148 @@
     </div>
   </div>
   
-  <!-- Chat popup include -->
+  <!-- Chat popup directly embedded -->
+  <div id="chat-fab">
+    <button id="chat-fab-btn" aria-label="Chat with us" style="display: flex; align-items: center; gap: 0.5rem;">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="#ff663f"/>
+        <path d="M10 13C10 11.3431 11.3431 10 13 10H19C20.6569 10 22 11.3431 22 13V19C22 20.6569 20.6569 22 19 22H13C11.3431 22 10 20.6569 10 19V13Z" stroke="white" stroke-width="2"/>
+        <circle cx="14" cy="16" r="1" fill="white"/>
+        <circle cx="16" cy="16" r="1" fill="white"/>
+        <circle cx="18" cy="16" r="1" fill="white"/>
+      </svg>
+      <span style="color:#fff; font-family: var(--paragraf-text-style-font-family, 'OpenSans-Regular', sans-serif); font-size: 1.05rem; font-weight: 400; letter-spacing: 0.5px;">Chat</span>
+    </button>
+  </div>
+  <div id="chat-popup" style="display:none;">
+    <div id="chat-popup-header">
+      <span>Chat with our team</span>
+      <button id="chat-popup-close">×</button>
+    </div>
+    <div id="chat-popup-messages"></div>
+    <form id="chat-popup-form">
+      <input type="text" id="chat-popup-input" placeholder="Type your message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
   <script>
-    fetch('chat-popup.html')
-      .then(r => r.text())
-      .then(html => {
-        const div = document.createElement('div');
-        div.innerHTML = html;
-        document.body.appendChild(div);
-      });
+    const chatFabBtn = document.getElementById('chat-fab-btn');
+    const chatPopup = document.getElementById('chat-popup');
+    const chatPopupClose = document.getElementById('chat-popup-close');
+    const chatPopupForm = document.getElementById('chat-popup-form');
+    const chatPopupInput = document.getElementById('chat-popup-input');
+    const chatPopupMessages = document.getElementById('chat-popup-messages');
+
+    chatFabBtn.onclick = () => {
+      chatPopup.style.display = 'flex';
+      chatFabBtn.style.display = 'none';
+    };
+    chatPopupClose.onclick = () => {
+      chatPopup.style.display = 'none';
+      chatFabBtn.style.display = 'block';
+    };
+    chatPopupForm.onsubmit = function(e) {
+      e.preventDefault();
+      const msg = chatPopupInput.value.trim();
+      if (!msg) return;
+      const userMsg = document.createElement('div');
+      userMsg.textContent = 'You: ' + msg;
+      userMsg.style.color = '#ff663f';
+      chatPopupMessages.appendChild(userMsg);
+      chatPopupInput.value = '';
+      // Simulate bot reply
+      setTimeout(() => {
+        const botMsg = document.createElement('div');
+        botMsg.textContent = 'Bot: Thank you for your message! Our team will reply soon.';
+        botMsg.style.color = '#f0efef';
+        chatPopupMessages.appendChild(botMsg);
+        chatPopupMessages.scrollTop = chatPopupMessages.scrollHeight;
+      }, 1000);
+      chatPopupMessages.scrollTop = chatPopupMessages.scrollHeight;
+    };
   </script>
+  <style>
+    #chat-fab {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 9999;
+    }
+    #chat-fab-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      transition: box-shadow 0.2s;
+    }
+    #chat-fab-btn:hover {
+      box-shadow: 0 4px 24px rgba(255,102,63,0.25);
+    }
+    #chat-popup {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 340px;
+      max-width: 95vw;
+      background: #181818;
+      color: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+      z-index: 10000;
+      overflow: hidden;
+    }
+    #chat-popup-header {
+      background: #ff663f;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    #chat-popup-close {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    #chat-popup-messages {
+      flex: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      max-height: 200px;
+      font-size: 1rem;
+    }
+    #chat-popup-form {
+      display: flex;
+      border-top: 1px solid #333;
+    }
+    #chat-popup-input {
+      flex: 1;
+      border: none;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 0 0 0 1.2rem;
+      background: #232323;
+      color: #fff;
+    }
+    #chat-popup-form button {
+      background: #ff663f;
+      color: #fff;
+      border: none;
+      border-radius: 0 0 1.2rem 0;
+      padding: 0 1.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #chat-popup-form button:hover { background: #e6552e; }
+  </style>
 </body>
 </html>
