@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../bathroom"
+		},
+		{
+			"path": "../bedroom"
+		},
+		{
+			"path": "../kids room"
+		},
+		{
+			"path": "../kitchen"
+		},
+		{
+			"path": "../living room"
+		}
+	]
+}
